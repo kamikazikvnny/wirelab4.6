@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>wire-lab — Virtual Electrical Training</title>
+<link rel="stylesheet" href="../nav.css">
+<link rel="stylesheet" href="account.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="navbar">
+
+        <div class="navbar-avatar">
+            <a href="account.html" class="avatar-frame" id="navbar-profile">
+                <img src="../z-images/profile-icons/icon-03.webp" alt="Account">
+            </a>
+        </div>
+
+        <div class="brand">
+            <div class="brand-icon">⚡</div>
+        </div>
+
+        <nav class="site-navigation">
+                <a data-page="home" class="nav-button">HOME</a>
+                <a data-page="study" class="nav-button">STUDY</a>
+                <a data-page="labs" class="nav-button">LABS</a>
+                <a data-page="test" class="nav-button">TEST</a>
+            <div class="menu-container">
+
+                <button
+                    type="button"
+                    class="nav-button menu-button"
+                    id="menu-button"
+                    aria-label="Open menu"
+                    title="Menu">
+                    ☰
+                </button>
+
+                <div class="menu-panel" id="menu-panel">
+                    <a href="../debug/debug.html" class="menu-item">DEBUG</a>
+                    <a href="../tools/tools.html" class="menu-item">TOOLS</a>
+                    <a href="../account/account.html" class="menu-item">ACCOUNT</a>
+                </div>
+            </div>
+        </nav>
+
+        <button
+            type="button"
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Switch to light theme"
+            title="Switch theme"> 💡 </button>
+    </div> <!-- navbar -->
+</header>
+
+<main class="account-content page-width">
+
+    <!-- =====================================================
+         PROFILE
+         ===================================================== -->
+
+    <section class="account-card profile-card">
+
+        <div class="account-card-avatar">
+
+            <div class="account-card-avatar-frame">
+                <img
+                    id="profile-image"
+                    src="../z-images/profile-icons/icon-01.png"
+                    alt="Profile"
+                >
+            </div>
+
+            <button class="edit-button" id="edit-profile">
+                EDIT PROFILE
+            </button>
+
+        </div>
+
+        <div class="profile-info">
+
+            <h1 id="profile-name">
+                WireLab Student
+            </h1>
+
+            <p id="profile-email">
+                Electrical Technician
+            </p>
+
+            <div class="profile-status">
+
+                <div class="status-item">
+                    <strong id="profile-unit-count">0</strong>
+                    <span>Units</span>
+                </div>
+
+                <div class="status-item">
+                    <strong>36</strong>
+                    <span>Total Units</span>
+                </div>
+
+                <div class="status-item">
+                    <strong id="account-progress-percent">0%</strong>
+                    <span>Progress</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         PROGRESS
+         ===================================================== -->
+
+    <section class="account-card progress-card">
+
+        <div class="card-heading">
+
+            <h2>TRAINING PROGRESS</h2>
+
+            <span
+                class="progress-percent"
+                id="progress-percent-display"
+            >
+                0%
+            </span>
+
+        </div>
+
+        <div class="progress-bar">
+
+            <div
+                class="progress-fill"
+                id="account-progress-bar"
+            ></div>
+
+        </div>
+
+        <p class="progress-text">
+            <span id="account-completed-units">0</span>
+            of 36 units completed
+        </p>
+
+    </section>
+
+
+    <!-- =====================================================
+         STATS
+         ===================================================== -->
+
+    <section class="account-stats">
+
+        <div class="stat-card">
+
+            <strong id="stat-units">0</strong>
+
+            <span>Units Completed</span>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <strong id="stat-questions">0</strong>
+
+            <span>Questions Answered</span>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <strong id="stat-accuracy">0%</strong>
+
+            <span>Accuracy</span>
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- =====================================================
+         QUICK ACCESS
+         ===================================================== -->
+
+    <section class="account-card quick-access-card">
+
+        <h2>QUICK ACCESS</h2>
+
+        <div class="quick-access">
+
+            <a href="../study/study.html" class="quick-link">
+                <span>STUDY</span>
+                <span>→</span>
+            </a>
+
+            <a href="../labs/labs.html" class="quick-link">
+                <span>LABS</span>
+                <span>→</span>
+            </a>
+
+            <a href="../test/test.html" class="quick-link">
+                <span>TEST</span>
+                <span>→</span>
+            </a>
+
+            <a href="../debug/debug.html" class="quick-link">
+                <span>DEBUG</span>
+                <span>→</span>
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         SETTINGS
+         ===================================================== -->
+
+    <section class="account-card settings-card">
+
+        <h2>PROGRESS MANAGEMENT</h2>
+
+        <p>
+            Reset your WireLab unit progress.
+        </p>
+
+        <button
+            class="reset-button"
+            id="reset-progress"
+        >
+            RESET PROGRESS
+        </button>
+
+    </section>
+
+</main>
+
+
+<!-- =========================================================
+     EDIT PROFILE MODAL
+     ========================================================= -->
+
+<div class="profile-modal" id="profile-modal">
+
+    <div class="profile-modal-box">
+
+        <h2>EDIT PROFILE</h2>
+
+
+        <!-- PROFILE PICTURE -->
+
+        <div class="modal-profile-picture">
+
+            <img
+                id="modal-profile-image"
+                src="../z-images/profile-icons/icon-01.png"
+                alt="Profile Picture"
+            >
+
+        </div>
+
+
+        <h3>CHANGE PROFILE PICTURE</h3>
+
+<div class="modal-profile-options">
+
+    
+
+    <button class="modal-profile-option" data-icon="icon-03.webp">
+        <img src="../z-images/profile-icons/icon-03.webp" alt="Profile icon 3">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-04.webp">
+        <img src="../z-images/profile-icons/icon-04.webp" alt="Profile icon 4">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-05.webp">
+        <img src="../z-images/profile-icons/icon-05.webp" alt="Profile icon 5">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-06.webp">
+        <img src="../z-images/profile-icons/icon-06.webp" alt="Profile icon 6">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-07.webp">
+        <img src="../z-images/profile-icons/icon-07.webp" alt="Profile icon 7">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-08.webp">
+        <img src="../z-images/profile-icons/icon-08.webp" alt="Profile icon 8">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-09.webp">
+        <img src="../z-images/profile-icons/icon-09.webp" alt="Profile icon 9">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-10.webp">
+        <img src="../z-images/profile-icons/icon-10.webp" alt="Profile icon 10">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-11.webp">
+        <img src="../z-images/profile-icons/icon-11.webp" alt="Profile icon 11">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-12.webp">
+        <img src="../z-images/profile-icons/icon-12.webp" alt="Profile icon 12">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-13.webp">
+        <img src="../z-images/profile-icons/icon-13.webp" alt="Profile icon 13">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-14.webp">
+        <img src="../z-images/profile-icons/icon-14.webp" alt="Profile icon 14">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-15.webp">
+        <img src="../z-images/profile-icons/icon-15.webp" alt="Profile icon 15">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-16.webp">
+        <img src="../z-images/profile-icons/icon-16.webp" alt="Profile icon 16">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-17.webp">
+        <img src="../z-images/profile-icons/icon-17.webp" alt="Profile icon 17">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-17.1.webp">
+        <img src="../z-images/profile-icons/icon-17.1.webp" alt="Profile icon 17.1">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-18.webp">
+        <img src="../z-images/profile-icons/icon-18.webp" alt="Profile icon 18">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-19.webp">
+        <img src="../z-images/profile-icons/icon-19.webp" alt="Profile icon 19">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-20.webp">
+        <img src="../z-images/profile-icons/icon-20.webp" alt="Profile icon 20">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-21.webp">
+        <img src="../z-images/profile-icons/icon-21.webp" alt="Profile icon 21">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-22.webp">
+        <img src="../z-images/profile-icons/icon-22.webp" alt="Profile icon 22">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-23.webp">
+        <img src="../z-images/profile-icons/icon-23.webp" alt="Profile icon 23">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-24.webp">
+        <img src="../z-images/profile-icons/icon-24.webp" alt="Profile icon 24">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-25.webp">
+        <img src="../z-images/profile-icons/icon-25.webp" alt="Profile icon 25">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-26.webp">
+        <img src="../z-images/profile-icons/icon-26.webp" alt="Profile icon 26">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-28.webp">
+        <img src="../z-images/profile-icons/icon-28.webp" alt="Profile icon 28">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-29.webp">
+        <img src="../z-images/profile-icons/icon-29.webp" alt="Profile icon 29">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-30.webp">
+        <img src="../z-images/profile-icons/icon-30.webp" alt="Profile icon 30">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-31.webp">
+        <img src="../z-images/profile-icons/icon-31.webp" alt="Profile icon 31">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-32.webp">
+        <img src="../z-images/profile-icons/icon-32.webp" alt="Profile icon 32">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-33.webp">
+        <img src="../z-images/profile-icons/icon-33.webp" alt="Profile icon 33">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-34.webp">
+        <img src="../z-images/profile-icons/icon-34.webp" alt="Profile icon 34">
+    </button>
+    
+    <button class="modal-profile-option" data-icon="icon-35.webp">
+        <img src="../z-images/profile-icons/icon-35.webp" alt="Profile icon 35">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-36.webp">
+        <img src="../z-images/profile-icons/icon-36.webp" alt="Profile icon 36">
+    </button>
+
+    <button class="modal-profile-option" data-icon="icon-37.webp">
+        <img src="../z-images/profile-icons/icon-37.webp" alt="Profile icon 37">
+    </button>
+</div>
+
+
+
+
+<!-- =========================================================
+     ========================================================= -->
+        <!-- NAME -->
+
+        <div class="form-group">
+
+            <label for="profile-name-input">
+                NAME
+            </label>
+
+            <input
+                type="text"
+                id="profile-name-input"
+                placeholder="Enter your name"
+            >
+
+        </div>
+
+
+        <!-- ROLE -->
+
+        <div class="form-group">
+
+            <label for="profile-email-input">
+                ROLE
+            </label>
+
+            <input
+                type="text"
+                id="profile-email-input"
+                placeholder="Electrical Technician"
+            >
+
+        </div>
+
+
+        <!-- BUTTONS -->
+
+        <div class="modal-actions">
+
+            <button
+                class="modal-button modal-cancel"
+                id="close-profile-modal"
+            >
+                CANCEL
+            </button>
+
+            <button
+                class="modal-button modal-save"
+                id="save-profile"
+            >
+                SAVE
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<script src="../nav.js"></script>
+<script src="account.js"></script>
+
+</body>
+</html>
+

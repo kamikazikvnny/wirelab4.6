@@ -1,0 +1,597 @@
+/* =========================================================
+   WIRELAB — HOME PAGE
+========================================================= */
+
+
+/* =========================================================
+   HOME CONTENT
+========================================================= */
+
+.home-content {
+    padding-bottom: 40px;
+}
+
+
+/* =========================================================
+   SECTION HEADINGS
+========================================================= */
+
+.section-heading {
+    margin-bottom: 12px;
+}
+
+.section-label {
+    display: block;
+    margin-bottom: 4px;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+
+    color: var(--wire-accent-bright);
+}
+
+.section-heading h2 {
+    margin: 0;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 21px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1px;
+
+    color: var(--wire-text);
+}
+
+.section-heading p {
+    margin: 6px 0 0 0;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: var(--wire-text-muted);
+}
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.home-hero {
+    position: relative;
+
+    width: 100%;
+    min-height: 260px;
+
+    margin-bottom: 14px;
+
+    display: flex;
+    align-items: flex-end;
+
+    border: 1px solid var(--wire-border);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.018)
+        );
+
+    box-shadow:
+        0 8px 25px var(--wire-shadow),
+        inset 0 1px 0 var(--wire-highlight);
+
+    overflow: hidden;
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.home-hero-content {
+    width: 100%;
+
+    padding: 24px 18px;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent,
+            rgba(226, 227, 228, 0.109)
+        );
+}
+
+.hero-label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+
+    color: var(--wire-accent-bright);
+}
+
+.home-hero h2 {
+    margin: 0;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1.5px;
+
+    color: var(--wire-text);
+}
+
+.home-hero p {
+    margin: 10px 0 14px 0;
+
+    max-width: 480px;
+
+    font-size: 13px;
+    line-height: 1.5;
+
+    color: var(--wire-text-muted);
+}
+
+
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 30px;
+
+    padding: 0 13px;
+
+    border: 1px solid var(--wire-border);
+
+    background: var(--wire-hover-surface);
+
+    color: var(--wire-text);
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+.hero-button:hover {
+    border-color: var(--wire-accent);
+    background: var(--wire-hover-surface);
+}
+
+
+/* =========================================================
+   CORE LOOP
+========================================================= */
+
+.home-loop {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.home-action-grid {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+.home-action-card {
+    width: 100%;
+
+    display: block;
+
+    padding: 14px;
+
+    border: 1px solid var(--wire-border);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.018)
+        );
+
+    color: var(--wire-text);
+
+    text-decoration: none;
+
+    box-shadow:
+        0 6px 20px var(--wire-shadow),
+        inset 0 1px 0 var(--wire-highlight);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    overflow: hidden;
+}
+
+.home-action-card:hover {
+    background: var(--wire-hover-surface);
+    border-color: var(--wire-accent);
+}
+
+.action-number {
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.3px;
+
+    color: var(--wire-accent-bright);
+}
+
+.action-label {
+    display: block;
+
+    margin-bottom: 2px;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    color: var(--wire-text-muted);
+}
+
+.home-action-card h3 {
+    margin: 0;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+
+    color: var(--wire-text);
+}
+
+.home-action-card p {
+    margin: 5px 0 10px 0;
+
+    font-size: 12px;
+    line-height: 1.45;
+
+    color: var(--wire-text-muted);
+}
+
+.action-link {
+    display: block;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    color: var(--wire-accent-bright);
+}
+
+
+/* =========================================================
+   CONTINUE LEARNING
+========================================================= */
+
+.home-progress {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.progress-card {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 15px;
+
+    border: 1px solid var(--wire-border);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.018)
+        );
+
+    box-shadow:
+        0 6px 20px var(--wire-shadow),
+        inset 0 1px 0 var(--wire-highlight);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+.progress-card-main {
+    width: 100%;
+}
+
+.progress-label {
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+
+    color: var(--wire-accent-bright);
+}
+
+.progress-card h3 {
+    margin: 0;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+
+    color: var(--wire-text);
+}
+
+.progress-card p {
+    margin: 5px 0 0 0;
+
+    font-size: 12px;
+    line-height: 1.45;
+
+    color: var(--wire-text-muted);
+}
+
+.progress-stat {
+    margin-top: 14px;
+    padding-top: 12px;
+
+    border-top: 1px solid var(--wire-border);
+}
+
+.progress-stat strong {
+    display: inline-block;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+
+    color: var(--wire-text);
+}
+
+.progress-stat span {
+    margin-left: 5px;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    color: var(--wire-text-muted);
+}
+
+.progress-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    min-height: 30px;
+
+    margin-top: 12px;
+
+    border: 1px solid var(--wire-border);
+
+    background: var(--wire-hover-surface);
+
+    color: var(--wire-text);
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    text-decoration: none;
+}
+
+.progress-button:hover {
+    border-color: var(--wire-accent);
+}
+
+
+/* =========================================================
+   LAB COMMAND CENTER
+========================================================= */
+
+.home-command-center {
+    width: 100%;
+    margin-bottom: 18px;
+}
+
+.command-grid {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 9px;
+}
+
+.command-card {
+    width: 100%;
+
+    display: block;
+
+    padding: 14px;
+
+    border: 1px solid var(--wire-border);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.018)
+        );
+
+    color: var(--wire-text);
+
+    text-decoration: none;
+
+    box-shadow:
+        0 6px 20px var(--wire-shadow),
+        inset 0 1px 0 var(--wire-highlight);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    overflow: hidden;
+}
+
+.command-card:hover {
+    background: var(--wire-hover-surface);
+    border-color: var(--wire-accent);
+}
+
+.command-label {
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+
+    color: var(--wire-accent-bright);
+}
+
+.command-card h3 {
+    margin: 0;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+
+    color: var(--wire-text);
+}
+
+.command-card p {
+    margin: 5px 0 10px 0;
+
+    font-size: 12px;
+    line-height: 1.45;
+
+    color: var(--wire-text-muted);
+}
+
+.command-link {
+    display: block;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    color: var(--wire-accent-bright);
+}
+
+
+/* =========================================================
+   LAB BENCH
+========================================================= */
+
+.home-lab-bench {
+    width: 100%;
+
+    margin-bottom: 10px;
+
+    border: 1px solid var(--wire-border);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.06),
+            rgba(255, 255, 255, 0.018)
+        );
+
+    box-shadow:
+        0 8px 25px var(--wire-shadow),
+        inset 0 1px 0 var(--wire-highlight);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    overflow: hidden;
+}
+
+.lab-bench-content {
+    padding: 22px 18px;
+}
+
+.home-lab-bench h2 {
+    margin: 0;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 1.3px;
+
+    color: var(--wire-text);
+}
+
+.home-lab-bench p {
+    margin: 9px 0 14px 0;
+
+    font-size: 13px;
+    line-height: 1.5;
+
+    color: var(--wire-text-muted);
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .home-content {
+        padding-bottom: 30px;
+    }
+
+    .home-hero {
+        min-height: 230px;
+    }
+
+    .home-hero-content {
+        padding: 20px 14px;
+    }
+
+    .home-hero h2 {
+        font-size: 27px;
+    }
+
+    .home-action-card,
+    .command-card,
+    .progress-card {
+        padding: 13px;
+    }
+
+    .lab-bench-content {
+        padding: 20px 14px;
+    }
+}

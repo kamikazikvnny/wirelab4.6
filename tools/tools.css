@@ -1,0 +1,243 @@
+/* =========================================================
+   WIRELAB — TOOLS PAGE
+========================================================= */
+
+.tools-content {
+    padding-bottom: 40px;
+}
+
+
+/* =========================================================
+   PAGE TITLE
+========================================================= */
+
+.tools-content > h2 {
+    margin: 0 0 12px 0;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.2;
+    letter-spacing: 1.5px;
+
+    color: var(--wire-text);
+
+    text-transform: uppercase;
+
+    text-shadow:
+        0 0 10px var(--wire-text-glow);
+}
+
+
+/* =========================================================
+   TOOLS GRID
+========================================================= */
+
+.tools-grid {
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   TOOL CARD
+========================================================= */
+
+.tool-card {
+    position: relative;
+
+    width: 100%;
+    aspect-ratio: 1 / 1;
+
+    padding: 2px;
+
+    border: 1px solid var(--wire-border);
+
+    background: var(--wire-bg);
+
+    color: var(--wire-text);
+    text-decoration: none;
+
+    box-shadow:
+        0 8px 25px var(--wire-shadow),
+        inset 0 1px 0 var(--wire-highlight);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   TOOL IMAGE
+========================================================= */
+
+.tool-color-wheel {
+    position: absolute;
+
+    top: 2px;
+    left: 2px;
+
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+
+    margin: 0;
+
+    display: block;
+
+    max-width: none;
+
+    object-fit: cover;
+    object-position: center;
+
+    border: 0;
+
+    opacity: 0.9;
+
+    z-index: 0;
+}
+
+
+/* =========================================================
+   TOOL INFORMATION
+========================================================= */
+
+.tool-card-content {
+    position: absolute;
+
+    top: 2px;
+    right: 2px;
+    bottom: 2px;
+    left: 2px;
+
+    width: calc(100% - 4px);
+    height: calc(100% - 4px);
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    padding: 20px 10px 12px;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent 45%,
+            rgba(0, 0, 0, 0.78) 75%,
+            rgba(0, 0, 0, 0.92) 100%
+        );
+
+    z-index: 2;
+}
+
+
+/* =========================================================
+   TOOL TITLE
+========================================================= */
+
+.tool-card h3 {
+    margin: 0;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.15;
+
+    letter-spacing: 0.6px;
+
+    color: #ffffff;
+
+    text-shadow:
+        0 1px 6px rgba(0, 0, 0, 0.9);
+}
+
+
+/* =========================================================
+   TOOL DESCRIPTION
+========================================================= */
+
+.tool-card p {
+    margin: 4px 0 0 0;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.2;
+
+    letter-spacing: 0.8px;
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   TOOL STATUS
+========================================================= */
+
+.tool-status {
+    display: block;
+
+    margin-top: 7px;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.9px;
+
+    color: var(--wire-accent-bright);
+
+    text-shadow:
+        0 0 6px var(--wire-accent-glow);
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.tool-card:hover {
+    border-color: var(--wire-accent);
+}
+
+
+/* =========================================================
+   SMALL PHONES
+========================================================= */
+
+@media (max-width: 400px) {
+
+    .tools-content {
+        padding-bottom: 30px;
+    }
+
+    .tools-content > h2 {
+        font-size: 21px;
+    }
+
+    .tools-grid {
+        gap: 8px;
+    }
+
+    .tool-card-content {
+        padding: 18px 8px 10px;
+    }
+
+    .tool-card h3 {
+        font-size: 14px;
+    }
+
+    .tool-card p {
+        font-size: 9px;
+    }
+
+    .tool-status {
+        margin-top: 6px;
+        font-size: 8px;
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>wire-lab — Virtual Electrical Training</title>
+<link rel="stylesheet" href="../nav.css">
+<link rel="stylesheet" href="debug.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="navbar">
+
+        <div class="navbar-avatar">
+            <a href="account.html" class="avatar-frame" id="navbar-profile">
+                <img src="../z-images/profile-icons/icon-03.webp" alt="Account">
+            </a>
+        </div>
+
+        <div class="brand">
+            <div class="brand-icon">⚡</div>
+        </div>
+
+        <nav class="site-navigation">
+                <a data-page="home" class="nav-button">HOME</a>
+                <a data-page="study" class="nav-button">STUDY</a>
+                <a data-page="labs" class="nav-button">LABS</a>
+                <a data-page="test" class="nav-button">TEST</a>
+            <div class="menu-container">
+
+                <button
+                    type="button"
+                    class="nav-button menu-button"
+                    id="menu-button"
+                    aria-label="Open menu"
+                    title="Menu">
+                    ☰
+                </button>
+
+                <div class="menu-panel" id="menu-panel">
+                    <a href="../debug/debug.html" class="menu-item">DEBUG</a>
+                    <a href="../tools/tools.html" class="menu-item">TOOLS</a>
+                    <a href="../account/account.html" class="menu-item">ACCOUNT</a>
+                </div>
+            </div>
+        </nav>
+
+        <button
+            type="button"
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Switch to light theme"
+            title="Switch theme"> 💡 </button>
+    </div> <!-- navbar -->
+</header>
+
+<main class="debug-page">
+
+    <section class="debug-hero">
+
+        <div class="debug-icon">⚠</div>
+
+        <h2>DEBUG</h2>
+
+        <p>
+            Find the fault. Trace the circuit. Fix the problem.
+        </p>
+
+    </section>
+
+
+    <section class="debug-intro">
+
+        <h2>Electrical Troubleshooting</h2>
+
+        <p>
+            Use your knowledge to identify electrical faults,
+            test circuits, and determine what went wrong.
+        </p>
+
+    </section>
+
+
+    <section class="debug-categories">
+
+        <div class="debug-card">
+            <span class="debug-card-icon">⚡</span>
+            <h3>NO POWER</h3>
+            <p>Find out why a circuit or device isn't receiving power.</p>
+            <button>START</button>
+        </div>
+
+        <div class="debug-card">
+            <span class="debug-card-icon">◉</span>
+            <h3>FAULTY CIRCUIT</h3>
+            <p>Trace a circuit and locate the point where the problem occurs.</p>
+            <button>START</button>
+        </div>
+
+        <div class="debug-card">
+            <span class="debug-card-icon">⚠</span>
+            <h3>SAFETY FAULT</h3>
+            <p>Identify incorrect wiring and potentially unsafe conditions.</p>
+            <button>START</button>
+        </div>
+
+    </section>
+
+</main>
+
+<script src="../nav.js"></script>
+<script src="debug.js"></script>
+
+</body>
+</html>

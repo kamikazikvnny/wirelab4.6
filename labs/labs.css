@@ -1,0 +1,432 @@
+/* =========================================================
+   WIRELAB — LABS PAGE
+========================================================= */
+
+
+/* =========================================================
+   LABS CONTENT
+   Outer width is controlled globally by:
+   main,
+   .page-width
+========================================================= */
+
+.labs-content {
+    padding-bottom: 40px;
+}
+
+
+/* =========================================================
+   PAGE TITLE
+========================================================= */
+
+.labs-page-title {
+    margin: 0 0 12px 0;
+
+    font-family: "Rajdhani", sans-serif;
+
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    color: var(--wire-text);
+
+    text-transform: uppercase;
+
+    text-shadow:
+        0 0 10px var(--wire-text-glow);
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.wirelab-hero {
+    position: relative;
+
+    width: 100%;
+
+    margin-bottom: 12px;
+
+    border: 1px solid var(--wire-border);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.06),
+            rgba(255, 255, 255, 0.02)
+        );
+
+    box-shadow:
+        0 8px 25px var(--wire-shadow),
+        inset 0 1px 0 var(--wire-highlight);
+
+    overflow: hidden;
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+
+/* =========================================================
+   HERO IMAGE
+========================================================= */
+
+.wirelab-hero > img {
+    width: 100%;
+    height: auto;
+
+    display: block;
+}
+
+
+/* =========================================================
+   HERO OVERLAY
+========================================================= */
+
+.hero-overlay {
+    padding: 15px 16px;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(20, 26, 31, 0.18),
+            rgba(20, 26, 31, 0.78)
+        );
+}
+
+
+/* =========================================================
+   HERO TEXT
+========================================================= */
+
+.hero-overlay > p {
+    margin: 0;
+
+    font-size: 13px;
+    line-height: 1.55;
+
+    color: var(--wire-text);
+}
+
+
+/* =========================================================
+   HERO FEATURE DETAIL
+========================================================= */
+
+.labs-feature-detail {
+    margin-top: 14px;
+    padding-top: 12px;
+
+    border-top: 1px solid var(--wire-border);
+}
+
+
+.labs-feature-detail h3 {
+    margin: 0 0 5px 0;
+
+    font-family: "Rajdhani", sans-serif;
+
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+
+    color: var(--wire-text);
+}
+
+
+.labs-feature-detail p {
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: var(--wire-text-muted);
+}
+
+
+/* =========================================================
+   LAB INFORMATION
+========================================================= */
+
+.exercise-info {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   OBJECTIVE CARD
+========================================================= */
+
+.objective-card {
+    width: 100%;
+
+    padding: 15px 16px;
+
+    border: 1px solid var(--wire-border);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.018)
+        );
+
+    box-shadow:
+        0 8px 25px var(--wire-shadow),
+        inset 0 1px 0 var(--wire-highlight);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+
+.objective-card h3 {
+    margin: 0 0 6px 0;
+
+    font-family: "Rajdhani", sans-serif;
+
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+
+    color: var(--wire-text);
+}
+
+
+.objective-card p {
+    margin: 0;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: var(--wire-text-muted);
+}
+
+
+/* =========================================================
+   PROGRESS CARD
+========================================================= */
+
+.progress-card {
+    width: 100%;
+
+    padding: 14px 16px;
+
+    border: 1px solid var(--wire-border);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.045),
+            rgba(255, 255, 255, 0.015)
+        );
+
+    box-shadow:
+        0 8px 25px var(--wire-shadow),
+        inset 0 1px 0 var(--wire-highlight);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+
+/* =========================================================
+   PROGRESS HEADER
+========================================================= */
+
+.progress-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 7px;
+
+    font-family: "Rajdhani", sans-serif;
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    color: var(--wire-text-muted);
+}
+
+
+.progress-header span:last-child {
+    color: var(--wire-text);
+}
+
+
+/* =========================================================
+   PROGRESS BAR
+========================================================= */
+
+.progress-bar {
+    width: 100%;
+    height: 6px;
+
+    overflow: hidden;
+
+    border: 1px solid var(--wire-border);
+
+    background: rgba(0, 0, 0, 0.20);
+}
+
+
+.progress-bar #progressFill {
+    width: 0%;
+    height: 100%;
+
+    background: var(--wire-accent);
+
+    box-shadow:
+        0 0 8px var(--wire-accent-glow);
+
+    transition: width 0.25s ease;
+}
+
+
+/* =========================================================
+   LAB GRID
+========================================================= */
+
+.labs-grid {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+}
+
+
+/* =========================================================
+   LAB CARD
+========================================================= */
+
+.lab-card {
+    width: 100%;
+
+    padding: 15px 16px;
+
+    border: 1px solid var(--wire-border);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.018)
+        );
+
+    box-shadow:
+        0 8px 25px var(--wire-shadow),
+        inset 0 1px 0 var(--wire-highlight);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   LAB NUMBER
+========================================================= */
+
+.lab-card-number {
+    margin-bottom: 4px;
+
+    font-family: "Rajdhani", sans-serif;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 1.3px;
+
+    color: var(--wire-accent-bright);
+}
+
+
+/* =========================================================
+   LAB TITLE
+========================================================= */
+
+.lab-card h3 {
+    margin: 0;
+
+    font-family: "Rajdhani", sans-serif;
+
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+
+    color: var(--wire-text);
+}
+
+
+/* =========================================================
+   LAB DESCRIPTION
+========================================================= */
+
+.lab-card p {
+    margin: 6px 0 12px 0;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    color: var(--wire-text-muted);
+}
+
+
+/* =========================================================
+   LAB BUTTON
+========================================================= */
+
+.lab-card-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    min-height: 28px;
+
+    padding: 0 12px;
+
+    border: 1px solid var(--wire-border);
+
+    background: var(--wire-hover-surface);
+
+    color: var(--wire-text);
+
+    font-family: "Rajdhani", sans-serif;
+
+    font-size: 11px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    text-decoration: none;
+
+    cursor: pointer;
+}
+
+
+.lab-card-button:hover {
+    background: var(--wire-hover-surface);
+    border-color: var(--wire-accent);
+
+    color: var(--wire-text);
+}
+
+
+.lab-card-button:disabled {
+    opacity: 0.45;
+    cursor: not-allowed;
+}
+

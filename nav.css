@@ -1,0 +1,454 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&display=swap');
+/* =====================================================
+   WIRELAB — DARK THEME
+===================================================== */
+:root {
+    /* PAGE BACKGROUND */
+    --wire-bg: #141a1f;
+
+    /* SURFACES */
+    --wire-surface: hsl(302, 86%, 53%); /**/
+    --wire-hover-surface: #252e35ce; /* nav tab active color */
+    --wire-nav-surface: #252e35ce; /* navbar color */
+
+    /* TEXT */
+    --wire-text: #80878e; /**/
+    --wire-text-muted: #747474fb; /* font color - navbar page tabs */
+
+    /* ACCENT */
+    --wire-accent: #e7e7e7e5; /* top of navbar highlight */
+    --wire-accent-bright: #d1d0d01f; /* active tab text color */
+    --wire-accent-glow: rgba(202, 226, 245, 0.868); /* avatar frame glow */
+    --wire-accent-glow-soft: rgba(242, 184, 75, 0.18); /**/
+    --wire-accent-glow-subtle: rgba(217, 154, 43, 0.10); /**/
+
+    /* BORDERS */
+    --wire-border: #e7e7e72c; /**/
+
+    /* SHADOWS */
+    --wire-shadow: rgba(0, 0, 0, 0.45); /**/
+    --wire-text-glow: rgba(230, 233, 236, 0.08); /**/
+    --wire-highlight: rgba(255, 255, 255, 0.10); /**/
+}
+
+
+/* =====================================================
+   LIGHT THEME
+===================================================== */
+[data-theme="light"] {
+    --wire-bg: #989384f4;
+
+    --wire-surface: #FFFFFF;
+    --wire-hover-surface: rgb(190, 185, 169);
+    --wire-nav-surface: rgba(205, 201, 187, 0.745); /* navbar color */
+
+    --wire-text: #322f1e;
+    --wire-text-muted: #2f2c1b;
+
+    --wire-accent: #5e4d2e; /* top of navbar highlight */
+    --wire-accent-bright: #80643bd7; /* active tab text color & navbar top */
+    --wire-accent-glow: rgba(96, 15, 15, 0.976); /* avatar glow */
+    --wire-accent-glow-soft: rgba(217, 146, 36, 0.16);
+    --wire-accent-glow-subtle: rgba(184, 117, 22, 0.10);
+
+    --wire-border: rgba(184, 117, 22, 0.30);
+
+    --wire-shadow: rgba(0, 0, 0, 0.16);
+    --wire-highlight: rgba(255, 255, 255, 0.55);
+}
+
+
+/* =====================================================
+   NAVBAR
+===================================================== */
+.navbar {
+    width: min(600px, calc(100% - 20px));
+    max-width: none;
+    height: 28px;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 0;
+
+    margin: 0 auto;
+    padding: 0 9px;
+
+    display: flex;
+    align-items: center;
+
+    position: relative;
+
+    border: 1px solid var(--wire-border);
+    background: var(--wire-nav-surface);
+
+    pointer-events: auto;
+    overflow: visible;
+}
+
+
+/* =====================================================
+   NAVBAR AVATAR & FRAME
+===================================================== */
+.avatar-frame {
+    width: 34px;
+    height: 34px;
+    transform: translateX(-7px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--wire-border);
+    box-shadow:
+        0 0 12px var(--wire-shadow),
+        inset 0 1px 0 var(--wire-highlight);
+}
+.avatar-frame:hover {
+    background: var(--wire-hover-surface);
+    border-color: var(--wire-accent);
+}
+
+
+/* =====================================================
+   NAV BUTTON LINKS
+===================================================== */
+.nav-button {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 auto;
+    min-width: 22px;
+    min-height: 22px;
+
+    padding: 0 2px;
+
+    color: var(--wire-text-muted);
+    text-decoration: none;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+
+    white-space: nowrap;
+    text-align: center;
+
+    background: transparent;
+
+    
+}
+
+.menu-button {
+    min-width: 22px;
+    width: 22px;
+    height: 22px;
+
+    padding: 0;
+
+    border: none;
+    background: transparent;
+
+    font-size: 16px;
+    line-height: 1;
+
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   WIRELAB — GLOBAL NAVIGATION
+===================================================== */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* =====================================================
+   GLOBAL CONTENT CONTAINERS - consistent outer boundary?
+===================================================== */
+main,
+.page-width {
+    width: min(600px, calc(100% - 20px));
+    max-width: none;
+    margin: 0 auto;
+    padding-bottom: 40px;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   GLOBAL BODY
+===================================================== */
+body {
+    margin: 0;
+    padding-top: 50px;
+    overflow-y: scroll; /* this fixed the shifting pages */
+    background-color: var(--wire-bg);
+    background-image: url; /* ("z-images/wallpapers/gold-blue-constellation.webp") */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--wire-text);
+}
+
+
+/* =====================================================
+  SITE HEADER & OUTER GLOW
+===================================================== */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+
+    padding: 10px 0;
+    z-index: 9999;
+    background: transparent;
+    pointer-events: none;
+
+    filter: drop-shadow(0 0 5px rgb(0, 0, 0));
+}
+
+
+
+
+/* =====================================================
+   GOLD TECH LINE
+===================================================== */
+
+.navbar::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+
+    height: 1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--wire-accent) 30%,
+            var(--wire-accent-bright) 50%,
+            var(--wire-accent) 70%,
+            transparent
+        );
+
+    opacity: 0.7;
+}
+
+
+
+/* =====================================================
+   BRAND
+===================================================== */
+
+.brand {
+    display: flex;
+    align-items: center;
+
+    gap: 5px;
+
+    flex: 0 0 auto;
+    min-width: 0;
+
+    position: relative;
+    z-index: 2;
+    transform: translateX(-6px);
+}
+
+/* =====================================================
+   BRAND Lightning ICON
+===================================================== */
+
+.brand-icon {
+    flex: 0 0 auto;
+
+    font-size: 15px;
+    line-height: 1;
+
+    color: var(--wire-accent-bright);
+
+    filter:
+        drop-shadow(0 0 5px var(--wire-accent-glow))
+        drop-shadow(0 0 15px var(--wire-accent-glow-soft));
+}
+
+/* =====================================================
+   WIRELAB WORDMARK
+===================================================== */
+
+.brand h1 {
+    margin: 0;
+
+    font-size: 17px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    color: var(--wire-text);
+
+    white-space: nowrap;
+
+    text-shadow:
+        0 1px 12px var(--wire-text-glow);
+}
+
+.brand h1::first-letter {
+    color: var(--wire-text);
+}
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+.site-navigation {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+
+    flex: 1 1 auto;
+    min-width: 0;
+
+    gap: 12px;
+    margin-left: 0;
+
+    overflow: visible;
+}
+
+
+
+/* =====================================================
+   NAV SEPARATOR
+===================================================== */
+.nav-button:not(:last-child)::before {
+    display: none;
+}
+
+/* =====================================================
+   NAV HOVER
+===================================================== */
+.nav-button:hover {
+    color: var(--wire-text);
+    background: var(--wire-hover-surface);
+    border-color: var(--wire-accent);
+}
+
+/* =====================================================
+   ACTIVE NAV BUTTON
+===================================================== */
+.nav-button.active {
+    background: var(--wire-hover-surface);
+    border-color: var(--wire-accent);
+    border-width: 2px;
+
+    text-shadow:
+        0 0 8px var(--wire-accent-glow-soft);
+}
+
+
+/* =====================================================
+   THEME TOGGLE
+===================================================== */
+.theme-toggle {
+    width: 20px;
+    height: 20px;
+
+    margin-left: 5px;
+    margin-right: 1px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0;
+
+    border: 1px solid var(--wire-border);
+
+    background: transparent;
+
+    color: var(--wire-accent-bright);
+
+    font-size: 15px;
+    line-height: 1;
+
+    cursor: pointer;
+
+    border-radius: 5px;
+
+}
+
+.theme-toggle:hover {
+    background: var(--wire-hover-surface);
+
+    color: var(--wire-text);
+}
+
+/* =====================================================
+   MENU PANEL
+===================================================== */
+.menu-panel {
+    display: none;
+
+    position: absolute;
+
+    top: 34px;
+    right: 0px;
+
+    min-width: 120px;
+
+    padding: 6px;
+
+    border: 1px solid var(--wire-border);
+    background: var(--wire-nav-surface);
+
+    box-shadow:
+        0 8px 20px var(--wire-shadow),
+        inset 0 1px 0 var(--wire-highlight);
+
+    z-index: 10000;
+}
+
+.menu-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.menu-panel.open {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    padding: 7px 10px;
+
+    color: var(--wire-text-muted);
+    text-decoration: none;
+
+    font-family: "Rajdhani", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.8px;
+
+    white-space: nowrap;
+}
+
+.menu-item:hover {
+    color: var(--wire-text);
+    background: var(--wire-hover-surface);
+}
+
+
+
+
+
+

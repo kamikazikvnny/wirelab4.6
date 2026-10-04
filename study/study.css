@@ -1,0 +1,555 @@
+/* =========================================================
+   WIRELAB — STUDY PAGE
+========================================================= */
+
+
+/* =========================================================
+   STUDY CONTENT
+========================================================= */
+
+
+/* =========================================================
+   STUDY INTRO IMAGE
+========================================================= */
+
+.study-intro-image {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    margin-bottom: 10px;
+
+    border: 1px solid var(--wire-border);
+
+    box-shadow:
+        0 8px 25px var(--wire-shadow),
+        inset 0 1px 0 var(--wire-highlight);
+
+      filter: grayscale(40%);
+      opacity: 0.95;
+}
+
+
+/* =========================================================
+   STUDY INTRO
+========================================================= */
+
+.study-intro {
+    width: 100%;
+    margin-top: -3px;
+    margin-bottom: 8px;
+    padding: 2px 12px;
+
+    border: 1px solid var(--wire-border);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.07),
+            rgba(255, 255, 255, 0.025)
+        );
+
+    box-shadow:
+        0 8px 25px var(--wire-shadow),
+        inset 0 1px 0 var(--wire-highlight);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   STUDY INTRO TITLE
+========================================================= */
+
+.study-intro-title {
+    font-family: "Rajdhani", sans-serif;
+
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+
+    color: var(--wire-text);
+
+    text-transform: uppercase;
+
+    text-shadow:
+        0 0 10px var(--wire-text-glow);
+}
+
+
+/* =========================================================
+   COURSE OVERVIEW
+========================================================= */
+
+.course-overview {
+    width: 100%;
+
+    margin-bottom: 12px;
+    padding: 16px;
+
+    border: 1px solid var(--wire-border);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.07),
+            rgba(255, 255, 255, 0.025)
+        );
+
+    box-shadow:
+        0 8px 25px var(--wire-shadow),
+        inset 0 1px 0 var(--wire-highlight);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   COURSE OVERVIEW TEXT
+========================================================= */
+
+.course-overview-text {
+    width: 100%;
+}
+
+
+.course-overview-label {
+    margin-bottom: 4px;
+
+    font-family: "Rajdhani", sans-serif;
+
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1.5px;
+
+    color: var(--wire-accent-bright);
+}
+
+
+.course-overview-title {
+    margin-bottom: 8px;
+
+    font-family: "Rajdhani", sans-serif;
+
+    font-size: 21px;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    color: var(--wire-text);
+}
+
+
+.course-overview-description {
+    font-size: 13px;
+    line-height: 1.55;
+
+    color: var(--wire-text-muted);
+}
+
+
+/* =========================================================
+   COURSE PROGRESS
+========================================================= */
+
+.course-progress {
+    width: 100%;
+
+    margin-top: 16px;
+    padding-top: 14px;
+
+    border-top: 1px solid var(--wire-border);
+}
+
+
+.course-progress-heading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 7px;
+
+    font-family: "Rajdhani", sans-serif;
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    color: var(--wire-text-muted);
+}
+
+
+.course-progress-heading strong {
+    color: var(--wire-text);
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   PROGRESS BAR
+========================================================= */
+
+.course-progress-track {
+    width: 100%;
+    height: 6px;
+
+    overflow: hidden;
+
+    border: 1px solid var(--wire-border);
+
+    background: rgba(0, 0, 0, 0.20);
+}
+
+
+.course-progress-fill {
+    width: 0%;
+    height: 100%;
+
+    background: var(--wire-accent);
+
+    box-shadow:
+        0 0 8px var(--wire-accent-glow);
+
+    transition: width 0.25s ease;
+}
+
+
+.course-progress-count {
+    margin-top: 6px;
+
+    font-size: 11px;
+
+    color: var(--wire-text-muted);
+}
+
+
+/* =========================================================
+   TABLE OF CONTENTS
+========================================================= */
+
+.study-toc {
+    width: 100%;
+}
+
+
+/* =========================================================
+   STUDY SECTION
+========================================================= */
+
+.study-section {
+    width: 100%;
+
+    margin-bottom: 12px;
+
+    padding: 14px;
+
+    border: 1px solid var(--wire-border);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.018)
+        );
+
+    box-shadow:
+        0 8px 25px var(--wire-shadow),
+        inset 0 1px 0 var(--wire-highlight);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    overflow: hidden;
+}
+
+
+/* =========================================================
+   SECTION HEADING
+========================================================= */
+
+.study-section-heading {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 10px;
+
+    margin-bottom: 12px;
+}
+
+
+.study-section-number {
+    flex: 0 0 auto;
+
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1px solid var(--wire-border);
+
+    font-family: "Rajdhani", sans-serif;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    color: var(--wire-accent-bright);
+
+    background: rgba(255, 255, 255, 0.035);
+}
+
+
+.study-section-info {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+
+.study-section-title {
+    font-family: "Rajdhani", sans-serif;
+
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    letter-spacing: 0.7px;
+
+    color: var(--wire-text);
+}
+
+
+.study-section-description {
+    margin-top: 4px;
+
+    font-size: 12px;
+    line-height: 1.45;
+
+    color: var(--wire-text-muted);
+}
+
+
+/* =========================================================
+   STUDY UNIT LIST
+========================================================= */
+
+.study-unit-grid {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+/* =========================================================
+   STUDY UNIT
+========================================================= */
+
+.study-unit {
+    width: 100%;
+
+    display: block;
+
+    padding: 12px 13px;
+
+    border: 1px solid var(--wire-border);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.045),
+            rgba(255, 255, 255, 0.015)
+        );
+
+    color: var(--wire-text);
+
+    text-decoration: none;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.04);
+
+    transition:
+        background 0.15s ease,
+        border-color 0.15s ease;
+}
+
+
+.study-unit:hover {
+    background: var(--wire-hover-surface);
+    border-color: var(--wire-accent);
+}
+
+
+/* =========================================================
+   UNIT NUMBER
+========================================================= */
+
+.study-unit-number {
+    display: block;
+
+    margin-bottom: 3px;
+
+    font-family: "Rajdhani", sans-serif;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 1.2px;
+
+    color: var(--wire-accent-bright);
+}
+
+
+/* =========================================================
+   UNIT TITLE
+========================================================= */
+
+.study-unit-title {
+    display: block;
+
+    font-family: "Rajdhani", sans-serif;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.2;
+
+    letter-spacing: 0.5px;
+
+    color: var(--wire-text);
+}
+
+
+/* =========================================================
+   UNIT DESCRIPTION
+========================================================= */
+
+.study-unit-description {
+    display: block;
+
+    margin-top: 5px;
+
+    font-size: 12px;
+    line-height: 1.45;
+
+    color: var(--wire-text-muted);
+}
+
+
+/* =========================================================
+   UNIT STATUS
+========================================================= */
+
+.study-unit-status {
+    display: block;
+
+    margin-top: 8px;
+
+    font-family: "Rajdhani", sans-serif;
+
+    font-size: 10px;
+    font-weight: 700;
+
+    letter-spacing: 1px;
+
+    color: var(--wire-accent-bright);
+}
+
+
+/* =========================================================
+   SAFETY REFERENCE
+========================================================= */
+
+.study-unit.safety-reference {
+    border-color: var(--wire-accent-glow-soft);
+}
+
+
+/* =========================================================
+   NEXT STEP
+========================================================= */
+
+.study-next {
+    width: 100%;
+
+    padding: 16px;
+
+    border: 1px solid var(--wire-border);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(255, 255, 255, 0.018)
+        );
+
+    box-shadow:
+        0 8px 25px var(--wire-shadow),
+        inset 0 1px 0 var(--wire-highlight);
+
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+}
+
+
+.study-next-label {
+    margin-bottom: 4px;
+
+    font-family: "Rajdhani", sans-serif;
+
+    font-size: 10px;
+    font-weight: 600;
+
+    letter-spacing: 1.5px;
+
+    color: var(--wire-accent-bright);
+}
+
+
+.study-next-title {
+    font-family: "Rajdhani", sans-serif;
+
+    font-size: 17px;
+    font-weight: 700;
+
+    color: var(--wire-text);
+}
+
+
+.study-next-description {
+    margin-top: 5px;
+
+    font-size: 12px;
+    line-height: 1.45;
+
+    color: var(--wire-text-muted);
+}
+
+/* =========================================================
+   COMPLETED UNIT
+========================================================= */
+
+.study-unit.completed {
+    background: var(--wire-hover-surface);
+    border-color: var(--wire-accent);
+
+    box-shadow:
+        0 0 10px var(--wire-accent-glow-soft),
+        inset 0 1px 0 var(--wire-highlight);
+}
+
+
+.study-unit.completed .study-unit-status {
+    color: var(--wire-accent);
+}
+
+
+.study-unit.completed .study-unit-status::before {
+    content: "✓ ";
+}

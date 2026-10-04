@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>wire-lab — Virtual Electrical Training</title>
+<link rel="stylesheet" href="../../nav.css">
+<link rel="stylesheet" href="color-wheel.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="navbar">
+
+        <div class="navbar-avatar">
+            <a href="account.html" class="avatar-frame" id="navbar-profile">
+                <img src="../z-images/profile-icons/icon-03.webp" alt="Account">
+            </a>
+        </div>
+
+        <div class="brand">
+            <div class="brand-icon">⚡</div>
+        </div>
+
+        <nav class="site-navigation">
+                <a data-page="home" class="nav-button">HOME</a>
+                <a data-page="study" class="nav-button">STUDY</a>
+                <a data-page="labs" class="nav-button">LABS</a>
+                <a data-page="test" class="nav-button">TEST</a>
+            <div class="menu-container">
+
+                <button
+                    type="button"
+                    class="nav-button menu-button"
+                    id="menu-button"
+                    aria-label="Open menu"
+                    title="Menu">
+                    ☰
+                </button>
+
+                <div class="menu-panel" id="menu-panel">
+                    <a href="../debug/debug.html" class="menu-item">DEBUG</a>
+                    <a href="../tools/tools.html" class="menu-item">TOOLS</a>
+                    <a href="../account/account.html" class="menu-item">ACCOUNT</a>
+                </div>
+            </div>
+        </nav>
+
+        <button
+            type="button"
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Switch to light theme"
+            title="Switch theme"> 💡 </button>
+    </div> <!-- navbar -->
+</header>
+
+<main class="color-wheel-content page-width">
+
+    <!-- =================================================
+         COLOR WHEEL
+    ================================================== -->
+    <img
+        src="../../z-images/color-wheel.webp"
+        class="color-wheel"
+        alt="Ohm's Law and Power Color Wheel"
+    >
+
+    <!-- =================================================
+         INTERACTIVE HOTSPOTS
+    ================================================== -->
+
+    <svg
+        class="wheel-hotspots"
+        viewBox="0 0 1254 1254"
+        preserveAspectRatio="xMidYMid meet"
+        aria-label="Interactive electrical equations"
+    >
+
+        <!-- POWER -->
+
+        <polygon
+            class="wheel-hotspot"
+            data-equation="E × I"
+            points="44,622 96,372 398,512 380,620"
+        />
+
+        <polygon
+            class="wheel-hotspot"
+            data-equation="R × I²"
+            points="93,374 310,126 489,400 400,512"
+        />
+
+        <polygon
+            class="wheel-hotspot"
+            data-equation="E² / R"
+            points="308,130 627,31 625,353 489,396"
+        />
+
+
+        <!-- VOLTAGE -->
+
+        <polygon
+            class="wheel-hotspot"
+            data-equation="R × I"
+            points="625,30 953,140 766,397 628,354"
+        />
+
+        <polygon
+            class="wheel-hotspot"
+            data-equation="P / I"
+            points="957,142 1147,385 853,513 768,397"
+        />
+
+        <polygon
+            class="wheel-hotspot"
+            data-equation="√(P × R)"
+            points="854,514 1146,382 1192,622 872,620"
+        />
+
+
+        <!-- RESISTANCE -->
+
+        <polygon
+            class="wheel-hotspot"
+            data-equation="E / I"
+            points="871,622 1192,622 1068,961 834,749"
+        />
+
+        <polygon
+            class="wheel-hotspot"
+            data-equation="E² / P"
+            points="834,751 1069,960 885,1128 734,838"
+        />
+
+        <polygon
+            class="wheel-hotspot"
+            data-equation="P / I²"
+            points="628,863 626,1204 892,1145 732,840"
+        />
+
+
+        <!-- CURRENT -->
+
+        <polygon
+            class="wheel-hotspot"
+            data-equation="E / R"
+            points="626,863 628,1210 362,1127 522,840"
+        />
+
+        <polygon
+            class="wheel-hotspot"
+            data-equation="P / E"
+            points="520,841 356,1131 161,959 418,748"
+        />
+
+        <polygon
+            class="wheel-hotspot"
+            data-equation="√(P / R)"
+            points="418,745 164,960 42,621 380,620"
+        />
+
+    </svg>
+
+
+    <!-- =================================================
+         CALCULATOR
+    ================================================== -->
+    <section class="calculator">
+        <p id="equationDescription">
+            Click on one of the equations to begin.
+        </p>
+
+        <!-- =================================================
+             EQUATION INPUTS
+        ================================================== -->
+        <div id="calculatorInputs"></div>
+
+        <!-- =================================================
+             RESULT
+        ================================================== -->
+        <div class="calculator-result">
+            <span>RESULT</span>
+            <strong id="resultValue">
+                —
+            </strong>
+        </div>
+
+        <!-- =================================================
+             FIELD INFORMATION
+        ================================================== -->
+        <div class="field-information">
+            <p id="fieldUse"></p>
+            <p id="fieldExample"></p>
+            <p id="fieldUseExample"></p>
+        </div>
+
+        <!-- =================================================
+             PRACTICE
+        ================================================== -->
+        <button
+            id="practiceButton"
+            type="button"
+        >
+            PRACTICE THIS EQUATION
+        </button>
+        <div id="practiceBox">
+            Click PRACTICE THIS EQUATION to generate a problem.
+        </div>
+
+        <!-- =================================================
+             BASIC CALCULATOR
+        ================================================== -->
+        <div class="basic-calculator">
+            <div class="basic-calculator-title">
+                🔥 Ur Average Calculator
+            </div>
+            <div
+                id="basicDisplay"
+                class="basic-display"
+            >
+                0
+            </div>
+            <div class="basic-calculator-buttons">
+                <button
+    type="button"
+    data-calc="clear"
+    class="calc-clear"
+>
+    CLEAR
+</button>
+<button
+    type="button"
+    data-calc="sqrt"
+>
+    √
+</button>
+<button
+    type="button"
+    data-calc="square"
+>
+    x²
+</button>
+<button
+    type="button"
+    data-calc="operator"
+    data-value="/"
+>
+    ÷
+</button>
+                <button
+                    type="button"
+                    data-calc="operator"
+                    data-value="-"
+                >
+                    −
+                </button>
+                <button
+                    type="button"
+                    data-calc="number"
+                    data-value="7"
+                >
+                    7
+                </button>
+                <button
+                    type="button"
+                    data-calc="number"
+                    data-value="8"
+                >
+                    8
+                </button>
+                <button
+                    type="button"
+                    data-calc="number"
+                    data-value="9"
+                >
+                    9
+                </button>
+                <button
+                    type="button"
+                    data-calc="operator"
+                    data-value="+"
+                >
+                    +
+                </button>
+                <button
+                    type="button"
+                    data-calc="number"
+                    data-value="4"
+                >
+                    4
+                </button>
+                <button
+                    type="button"
+                    data-calc="number"
+                    data-value="5"
+                >
+                    5
+                </button>
+                <button
+                    type="button"
+                    data-calc="number"
+                    data-value="6"
+                >
+                    6
+                </button>
+                <button
+                    type="button"
+                    data-calc="equals"
+                >
+                    =
+                </button>
+                <button
+                    type="button"
+                    data-calc="number"
+                    data-value="1"
+                >
+                    1
+                </button>
+                <button
+                    type="button"
+                    data-calc="number"
+                    data-value="2"
+                >
+                    2
+                </button>
+                <button
+                    type="button"
+                    data-calc="number"
+                    data-value="3"
+                >
+                    3
+                </button>
+                <button
+                    type="button"
+                    data-calc="number"
+                    data-value="0"
+                    class="calc-zero"
+                >
+                    0
+                </button>
+                <button
+                    type="button"
+                    data-calc="number"
+                    data-value="."
+                >
+                    .
+                </button>
+            </div>
+        </div>
+
+        <!-- =================================================
+             BASIC CALCULATOR WARNING
+        ================================================== -->
+        <div class="basic-calculator-warning">
+            <div class="warning-label">
+                ⚠ CALCULATOR WARNING
+            </div>
+            <p>
+                This is a basic calculator, not a scientific calculator.
+                It handles the simple stuff so you don't have to do it
+                in your head. For advanced mathematics, specialized
+                calculations, or anything that makes you and your calculator
+                question life's choices, use the appropriate tool.
+            </p>
+        </div>
+    </section>
+</main>
+
+<script src="../../nav.js"></script>
+<script src="color-wheel.js"></script>
+
+</body>
+</html>

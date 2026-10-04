@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>wire-lab — Virtual Electrical Training</title>
+<link rel="stylesheet" href="../nav.css">
+<link rel="stylesheet" href="study.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="navbar">
+
+        <div class="navbar-avatar">
+            <a href="account.html" class="avatar-frame" id="navbar-profile">
+                <img src="../z-images/profile-icons/icon-03.webp" alt="Account">
+            </a>
+        </div>
+
+        <div class="brand">
+            <div class="brand-icon">⚡</div>
+        </div>
+
+        <nav class="site-navigation">
+                <a data-page="home" class="nav-button">HOME</a>
+                <a data-page="study" class="nav-button">STUDY</a>
+                <a data-page="labs" class="nav-button">LABS</a>
+                <a data-page="test" class="nav-button">TEST</a>
+            <div class="menu-container">
+
+                <button
+                    type="button"
+                    class="nav-button menu-button"
+                    id="menu-button"
+                    aria-label="Open menu"
+                    title="Menu">
+                    ☰
+                </button>
+
+                <div class="menu-panel" id="menu-panel">
+                    <a href="../debug/debug.html" class="menu-item">DEBUG</a>
+                    <a href="../tools/tools.html" class="menu-item">TOOLS</a>
+                    <a href="../account/account.html" class="menu-item">ACCOUNT</a>
+                </div>
+            </div>
+        </nav>
+
+        <button
+            type="button"
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Switch to light theme"
+            title="Switch theme"> 💡 </button>
+    </div> <!-- navbar -->
+</header>
+
+
+<!-- =========================================================
+     STUDY CONTENT
+========================================================= -->
+<main class="study-content page-width">
+
+    <img
+        src="../z-images/wirelab-study-art.webp"
+        alt="WireLab Electrical Theory"
+        class="study-intro-image"
+    >
+
+    <!-- =====================================================
+         STUDY INTRO
+    ====================================================== -->
+    <div class="study-intro">
+        <div class="study-intro-text">
+            <div class="study-intro-title">
+                Electrical Theory
+            </div>
+        </div>
+    </div>
+
+
+    <!-- =====================================================
+         COURSE HEADER
+    ====================================================== -->
+    <div class="course-overview">
+
+        <div class="course-overview-text">
+
+            <div class="course-overview-label">
+                COURSE TABLE OF CONTENTS
+            </div>
+
+            <div class="course-overview-title">
+                Electrical Theory &amp; Fundamentals
+            </div>
+
+            <div class="course-overview-description">
+                Study electrical theory, calculations, circuits,
+                equipment, machines, tools, and installation concepts.
+                Select a unit below to begin studying.
+                Each unit is organized as a separate lesson.
+            </div>
+
+        </div>
+
+        <div class="course-progress">
+
+            <div class="course-progress-heading">
+                <span>
+                    COURSE PROGRESS
+                </span>
+
+                <strong id="progressPercent">
+                    0%
+                </strong>
+            </div>
+
+            <div class="course-progress-track">
+
+                <div
+                    class="course-progress-fill"
+                    id="progressFill">
+                </div>
+
+            </div>
+
+            <div
+                class="course-progress-count"
+                id="completedCount">
+                0 of 36 units completed
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         TABLE OF CONTENTS
+    ====================================================== -->
+    <div class="study-toc">
+
+
+        <!-- =================================================
+             SECTION 01
+        ================================================== -->
+        <div class="study-section">
+
+            <div class="study-section-heading">
+
+                <div class="study-section-number">
+                    01
+                </div>
+
+                <div class="study-section-info">
+
+                    <div class="study-section-title">
+                        Electrical Safety, Basic Electricity &amp; Ohm's Law
+                    </div>
+
+                    <div class="study-section-description">
+                        Electrical safety, electrical fundamentals,
+                        basic quantities, and Ohm's Law.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="study-unit-grid">
+
+                <!-- UNIT 00 -->
+                <a
+                    href="units/00-electrical-safety.html"
+                    class="study-unit safety-reference"
+                    data-unit="00">
+
+                    <span class="study-unit-number"></span>
+
+                    <span class="study-unit-title">
+                        Electrical Safety
+                    </span>
+
+                    <span class="study-unit-description">
+                        Electrical hazards, PPE, safe work practices,
+                        and electrical safety procedures.
+                    </span>
+
+                    <span class="study-unit-status">
+                        Safety Overview
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 01 -->
+                <a
+                    href="units/01-atomic-structure.html"
+                    class="study-unit"
+                    data-unit="01">
+
+                    <span class="study-unit-number">
+                        UNIT 01
+                    </span>
+
+                    <span class="study-unit-title">
+                        Atomic Structure
+                    </span>
+
+                    <span class="study-unit-description">
+                        Atomic structure, electrons, protons,
+                        electrical charge, conductors, and insulators.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 02 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="2">
+
+                    <span class="study-unit-number">
+                        UNIT 02
+                    </span>
+
+                    <span class="study-unit-title">
+                        Electrical Quantities &amp; Ohm's Law
+                    </span>
+
+                    <span class="study-unit-description">
+                        Voltage, current, resistance, and the
+                        relationship between electrical quantities.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 03 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="3">
+
+                    <span class="study-unit-number">
+                        UNIT 03
+                    </span>
+
+                    <span class="study-unit-title">
+                        Static Electricity
+                    </span>
+
+                    <span class="study-unit-description">
+                        Static electric charges, attraction,
+                        repulsion, and the behavior of electrical charge.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 04 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="4">
+
+                    <span class="study-unit-number">
+                        UNIT 04
+                    </span>
+
+                    <span class="study-unit-title">
+                        Magnetism
+                    </span>
+
+                    <span class="study-unit-description">
+                        Magnetic fields, magnetic forces,
+                        electromagnetism, and magnetic effects of current.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 05 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="5">
+
+                    <span class="study-unit-number">
+                        UNIT 05
+                    </span>
+
+                    <span class="study-unit-title">
+                        Resistors
+                    </span>
+
+                    <span class="study-unit-description">
+                        Resistor construction, resistance values,
+                        color codes, tolerances, and applications.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SECTION 02
+        ================================================== -->
+        <div class="study-section">
+
+            <div class="study-section-heading">
+
+                <div class="study-section-number">
+                    02
+                </div>
+
+                <div class="study-section-info">
+
+                    <div class="study-section-title">
+                        Basic Electric Circuits
+                    </div>
+
+                    <div class="study-section-description">
+                        Series, parallel, and combination circuits
+                        and their electrical relationships.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="study-unit-grid">
+
+                <!-- UNIT 06 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="6">
+
+                    <span class="study-unit-number">
+                        UNIT 06
+                    </span>
+
+                    <span class="study-unit-title">
+                        Series Circuits
+                    </span>
+
+                    <span class="study-unit-description">
+                        Series circuit operation, current flow,
+                        voltage division, resistance, and calculations.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 07 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="7">
+
+                    <span class="study-unit-number">
+                        UNIT 07
+                    </span>
+
+                    <span class="study-unit-title">
+                        Parallel Circuits
+                    </span>
+
+                    <span class="study-unit-description">
+                        Parallel circuit operation, branch currents,
+                        voltage relationships, and calculations.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 08 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="8">
+
+                    <span class="study-unit-number">
+                        UNIT 08
+                    </span>
+
+                    <span class="study-unit-title">
+                        Combination Circuits
+                    </span>
+
+                    <span class="study-unit-description">
+                        Series-parallel circuit analysis,
+                        equivalent resistance, current, and voltage.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SECTION 03
+        ================================================== -->
+        <div class="study-section">
+
+            <div class="study-section-heading">
+
+                <div class="study-section-number">
+                    03
+                </div>
+
+                <div class="study-section-info">
+
+                    <div class="study-section-title">
+                        Test Instruments &amp; Wire Sizes
+                    </div>
+
+                    <div class="study-section-description">
+                        Electrical measurement instruments,
+                        conductors, wire construction, and sizing.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="study-unit-grid">
+
+                <!-- UNIT 09 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="9">
+
+                    <span class="study-unit-number">
+                        UNIT 09
+                    </span>
+
+                    <span class="study-unit-title">
+                        Test Instruments
+                    </span>
+
+                    <span class="study-unit-description">
+                        Multimeters, meters, electrical measurements,
+                        testing methods, and safe instrument use.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 10 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="10">
+
+                    <span class="study-unit-number">
+                        UNIT 10
+                    </span>
+
+                    <span class="study-unit-title">
+                        Determining Conductor Sizes
+                    </span>
+
+                    <span class="study-unit-description">
+                        Conductor construction, ampacity, wire sizes,
+                        insulation types, and conductor selection.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SECTION 04
+        ================================================== -->
+        <div class="study-section">
+
+            <div class="study-section-heading">
+
+                <div class="study-section-number">
+                    04
+                </div>
+
+                <div class="study-section-info">
+
+                    <div class="study-section-title">
+                        Small Sources of Electricity
+                    </div>
+
+                    <div class="study-section-description">
+                        Electrical conduction, batteries,
+                        electricity sources, and magnetic induction.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="study-unit-grid">
+
+                <!-- UNIT 11 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="11">
+
+                    <span class="study-unit-number">
+                        UNIT 11
+                    </span>
+
+                    <span class="study-unit-title">
+                        Conduction in Liquids and Gases
+                    </span>
+
+                    <span class="study-unit-description">
+                        Electrical conduction through liquids and gases,
+                        ionization, and electrical discharge.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 12 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="12">
+
+                    <span class="study-unit-number">
+                        UNIT 12
+                    </span>
+
+                    <span class="study-unit-title">
+                        Batteries and Other Sources of Electricity
+                    </span>
+
+                    <span class="study-unit-description">
+                        Batteries, cells, voltage sources,
+                        chemical energy, and other sources of electricity.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 13 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="13">
+
+                    <span class="study-unit-number">
+                        UNIT 13
+                    </span>
+
+                    <span class="study-unit-title">
+                        Magnetic Induction
+                    </span>
+
+                    <span class="study-unit-description">
+                        Magnetic induction, induced voltage,
+                        electromagnetic principles, and applications.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SECTION 05
+        ================================================== -->
+        <div class="study-section">
+
+            <div class="study-section-heading">
+
+                <div class="study-section-number">
+                    05
+                </div>
+
+                <div class="study-section-info">
+
+                    <div class="study-section-title">
+                        Basics of Alternating Current
+                    </div>
+
+                    <div class="study-section-description">
+                        Trigonometry, vectors, and the fundamentals
+                        of alternating current.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="study-unit-grid">
+
+                <!-- UNIT 14 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="14">
+
+                    <span class="study-unit-number">
+                        UNIT 14
+                    </span>
+
+                    <span class="study-unit-title">
+                        Basic Trigonometry and Vectors
+                    </span>
+
+                    <span class="study-unit-description">
+                        Trigonometric relationships, vectors,
+                        angles, and calculations used in electrical work.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 15 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="15">
+
+                    <span class="study-unit-number">
+                        UNIT 15
+                    </span>
+
+                    <span class="study-unit-title">
+                        Alternating Current
+                    </span>
+
+                    <span class="study-unit-description">
+                        Alternating voltage and current, frequency,
+                        cycles, waveforms, and AC fundamentals.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SECTION 06
+        ================================================== -->
+        <div class="study-section">
+
+            <div class="study-section-heading">
+
+                <div class="study-section-number">
+                    06
+                </div>
+
+                <div class="study-section-info">
+
+                    <div class="study-section-title">
+                        AC Circuits Containing Inductance
+                    </div>
+
+                    <div class="study-section-description">
+                        Inductance, inductive reactance,
+                        and AC circuits containing resistance and inductance.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="study-unit-grid">
+
+                <!-- UNIT 16 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="16">
+
+                    <span class="study-unit-number">
+                        UNIT 16
+                    </span>
+
+                    <span class="study-unit-title">
+                        Inductance in AC Circuits
+                    </span>
+
+                    <span class="study-unit-description">
+                        Inductance, inductive reactance,
+                        magnetic fields, and AC circuit behavior.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 17 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="17">
+
+                    <span class="study-unit-number">
+                        UNIT 17
+                    </span>
+
+                    <span class="study-unit-title">
+                        Resistive-Inductive Series Circuits
+                    </span>
+
+                    <span class="study-unit-description">
+                        Series circuits containing resistance and inductance,
+                        impedance, phase relationships, and calculations.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 18 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="18">
+
+                    <span class="study-unit-number">
+                        UNIT 18
+                    </span>
+
+                    <span class="study-unit-title">
+                        Resistive-Inductive Parallel Circuits
+                    </span>
+
+                    <span class="study-unit-description">
+                        Parallel circuits containing resistance and inductance,
+                        current relationships, impedance, and phase angle.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SECTION 07
+        ================================================== -->
+        <div class="study-section">
+
+            <div class="study-section-heading">
+
+                <div class="study-section-number">
+                    07
+                </div>
+
+                <div class="study-section-info">
+
+                    <div class="study-section-title">
+                        AC Circuits Containing Capacitors
+                    </div>
+
+                    <div class="study-section-description">
+                        Capacitance, capacitive reactance,
+                        and AC circuits containing resistance and capacitance.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="study-unit-grid">
+
+                <!-- UNIT 19 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="19">
+
+                    <span class="study-unit-number">
+                        UNIT 19
+                    </span>
+
+                    <span class="study-unit-title">
+                        Capacitors
+                    </span>
+
+                    <span class="study-unit-description">
+                        Capacitor construction, capacitance,
+                        charging, discharging, and electrical applications.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 20 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="20">
+
+                    <span class="study-unit-number">
+                        UNIT 20
+                    </span>
+
+                    <span class="study-unit-title">
+                        Capacitance in AC Circuits
+                    </span>
+
+                    <span class="study-unit-description">
+                        Capacitance in AC circuits, capacitive reactance,
+                        current, voltage, and phase relationships.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 21 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="21">
+
+                    <span class="study-unit-number">
+                        UNIT 21
+                    </span>
+
+                    <span class="study-unit-title">
+                        Resistive-Capacitive Series Circuits
+                    </span>
+
+                    <span class="study-unit-description">
+                        Series circuits containing resistance and capacitance,
+                        impedance, phase angle, and circuit calculations.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 22 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="22">
+
+                    <span class="study-unit-number">
+                        UNIT 22
+                    </span>
+
+                    <span class="study-unit-title">
+                        Resistive-Capacitive Parallel Circuits
+                    </span>
+
+                    <span class="study-unit-description">
+                        Parallel circuits containing resistance and capacitance,
+                        current, impedance, and phase relationships.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SECTION 08
+        ================================================== -->
+        <div class="study-section">
+
+            <div class="study-section-heading">
+
+                <div class="study-section-number">
+                    08
+                </div>
+
+                <div class="study-section-info">
+
+                    <div class="study-section-title">
+                        AC Circuits Containing Resistance-Inductance-Capacitance
+                    </div>
+
+                    <div class="study-section-description">
+                        RLC circuits, impedance, resonance,
+                        and resistance-inductance-capacitance relationships.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="study-unit-grid">
+
+                <!-- UNIT 23 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="23">
+
+                    <span class="study-unit-number">
+                        UNIT 23
+                    </span>
+
+                    <span class="study-unit-title">
+                        Resistive-Inductive-Capacitive Series Circuits
+                    </span>
+
+                    <span class="study-unit-description">
+                        Series RLC circuits, impedance, resonance,
+                        phase relationships, and circuit calculations.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 24 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="24">
+
+                    <span class="study-unit-number">
+                        UNIT 24
+                    </span>
+
+                    <span class="study-unit-title">
+                        Resistive-Inductive-Capacitive Parallel Circuits
+                    </span>
+
+                    <span class="study-unit-description">
+                        Parallel RLC circuits, impedance, current,
+                        resonance, and phase relationships.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 25 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="25">
+
+                    <span class="study-unit-number">
+                        UNIT 25
+                    </span>
+
+                    <span class="study-unit-title">
+                        Surge Protection and Lightning Protection
+                    </span>
+
+                    <span class="study-unit-description">
+                        Surge protection, lightning protection,
+                        transient voltages, and electrical system protection.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SECTION 09
+        ================================================== -->
+        <div class="study-section">
+
+            <div class="study-section-heading">
+
+                <div class="study-section-number">
+                    09
+                </div>
+
+                <div class="study-section-info">
+
+                    <div class="study-section-title">
+                        Three-Phase Power
+                    </div>
+
+                    <div class="study-section-description">
+                        Three-phase voltage, current,
+                        circuits, connections, and power.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="study-unit-grid">
+
+                <!-- UNIT 26 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="26">
+
+                    <span class="study-unit-number">
+                        UNIT 26
+                    </span>
+
+                    <span class="study-unit-title">
+                        Three-Phase Circuits
+                    </span>
+
+                    <span class="study-unit-description">
+                        Three-phase voltage and current,
+                        phase relationships, connections, and power.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SECTION 10
+        ================================================== -->
+        <div class="study-section">
+
+            <div class="study-section-heading">
+
+                <div class="study-section-number">
+                    10
+                </div>
+
+                <div class="study-section-info">
+
+                    <div class="study-section-title">
+                        Transformers
+                    </div>
+
+                    <div class="study-section-description">
+                        Single-phase and three-phase transformers,
+                        their operation, connections, and applications.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="study-unit-grid">
+
+                <!-- UNIT 27 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="27">
+
+                    <span class="study-unit-number">
+                        UNIT 27
+                    </span>
+
+                    <span class="study-unit-title">
+                        Single-Phase Transformers
+                    </span>
+
+                    <span class="study-unit-description">
+                        Single-phase transformer construction,
+                        operation, voltage ratios, and applications.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 28 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="28">
+
+                    <span class="study-unit-number">
+                        UNIT 28
+                    </span>
+
+                    <span class="study-unit-title">
+                        Three-Phase Transformers
+                    </span>
+
+                    <span class="study-unit-description">
+                        Three-phase transformer connections,
+                        operation, voltage relationships, and applications.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SECTION 11
+        ================================================== -->
+        <div class="study-section">
+
+            <div class="study-section-heading">
+
+                <div class="study-section-number">
+                    11
+                </div>
+
+                <div class="study-section-info">
+
+                    <div class="study-section-title">
+                        DC Machines
+                    </div>
+
+                    <div class="study-section-description">
+                        DC generators, DC motors,
+                        and electromagnetic machine operation.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="study-unit-grid">
+
+                <!-- UNIT 29 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="29">
+
+                    <span class="study-unit-number">
+                        UNIT 29
+                    </span>
+
+                    <span class="study-unit-title">
+                        DC Generators
+                    </span>
+
+                    <span class="study-unit-description">
+                        DC generator construction, electromagnetic induction,
+                        generated voltage, and generator operation.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 30 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="30">
+
+                    <span class="study-unit-number">
+                        UNIT 30
+                    </span>
+
+                    <span class="study-unit-title">
+                        DC Motors
+                    </span>
+
+                    <span class="study-unit-description">
+                        DC motor construction, torque, back EMF,
+                        speed control, and motor operation.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             SECTION 12
+        ================================================== -->
+        <div class="study-section">
+
+            <div class="study-section-heading">
+
+                <div class="study-section-number">
+                    12
+                </div>
+
+                <div class="study-section-info">
+
+                    <div class="study-section-title">
+                        AC Machines
+                    </div>
+
+                    <div class="study-section-description">
+                        AC alternators, three-phase motors,
+                        single-phase motors, installation, and harmonics.
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="study-unit-grid">
+
+                <!-- UNIT 31 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="31">
+
+                    <span class="study-unit-number">
+                        UNIT 31
+                    </span>
+
+                    <span class="study-unit-title">
+                        Three-Phase Alternators
+                    </span>
+
+                    <span class="study-unit-description">
+                        Three-phase alternator construction,
+                        electromagnetic generation, frequency, and output.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 32 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="32">
+
+                    <span class="study-unit-number">
+                        UNIT 32
+                    </span>
+
+                    <span class="study-unit-title">
+                        Three-Phase Motors
+                    </span>
+
+                    <span class="study-unit-description">
+                        Three-phase motor construction,
+                        rotating magnetic fields, torque, connections, and operation.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 33 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="33">
+
+                    <span class="study-unit-number">
+                        UNIT 33
+                    </span>
+
+                    <span class="study-unit-title">
+                        Single-Phase Motors
+                    </span>
+
+                    <span class="study-unit-description">
+                        Single-phase motor types, starting methods,
+                        winding arrangements, and applications.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 34 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="34">
+
+                    <span class="study-unit-number">
+                        UNIT 34
+                    </span>
+
+                    <span class="study-unit-title">
+                        Motor Installation
+                    </span>
+
+                    <span class="study-unit-description">
+                        Motor installation, connections, protection,
+                        controls, grounding, and installation requirements.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+
+                <!-- UNIT 35 -->
+                <a
+                    href="#"
+                    class="study-unit"
+                    data-unit="35">
+
+                    <span class="study-unit-number">
+                        UNIT 35
+                    </span>
+
+                    <span class="study-unit-title">
+                        Harmonics
+                    </span>
+
+                    <span class="study-unit-description">
+                        Harmonic currents, waveform distortion,
+                        system effects, and harmonic considerations.
+                    </span>
+
+                    <span class="study-unit-status">
+                        START UNIT
+                    </span>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         STUDY FOOTER
+    ====================================================== -->
+    <div class="study-next">
+
+        <div class="study-next-label">
+            NEXT STEP
+        </div>
+
+        <div class="study-next-title">
+            Choose a unit to begin studying.
+        </div>
+
+        <div class="study-next-description">
+            Your progress is saved automatically on this device.
+        </div>
+
+    </div>
+
+</main>
+
+<script src="../nav.js"></script>
+<script src="study.js"></script>
+
+</body>
+</html>

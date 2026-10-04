@@ -1,0 +1,907 @@
+/* =========================================================
+   WIRELAB — COLOR WHEEL
+   HOME-STYLE GLASS / GOLD THEME
+========================================================= */
+
+
+/* =========================================================
+   COLOR WHEEL PAGE
+========================================================= */
+
+.color-wheel-content {
+    position: relative;
+
+    width: min(600px, calc(100% - 20px));
+
+    margin: 0 auto;
+    padding: 0 0 40px;
+}
+
+
+/* =========================================================
+   COLOR WHEEL IMAGE
+========================================================= */
+
+.color-wheel-content .color-wheel {
+    display: block;
+
+    width: 100%;
+    height: auto;
+}
+
+
+/* =========================================================
+   SVG POLYGON HOTSPOTS
+========================================================= */
+
+.color-wheel-content .wheel-hotspots {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: auto;
+
+    aspect-ratio: 1 / 1;
+
+    z-index: 2;
+}
+
+.color-wheel-content .wheel-hotspot {
+    fill: transparent;
+    fill-opacity: 0;
+
+    stroke: none;
+    stroke-width: 0;
+
+    cursor: pointer;
+    pointer-events: all;
+
+    outline: none !important;
+
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+/* =========================================================
+   HOVER
+========================================================= */
+
+.color-wheel-content .wheel-hotspot:hover {
+    fill: #000000;
+    fill-opacity: 0.22;
+
+    stroke: none;
+    stroke-width: 0;
+
+    outline: none !important;
+}
+
+
+/* =========================================================
+   SELECTED
+========================================================= */
+
+.color-wheel-content .wheel-hotspot.selected {
+    fill: #000000 !important;
+    fill-opacity: 0.22 !important;
+
+    stroke: none !important;
+    stroke-width: 0 !important;
+
+    outline: none !important;
+}
+
+
+/* =========================================================
+   CALCULATOR
+========================================================= */
+
+.color-wheel-content .calculator {
+    position: relative;
+
+    width: 100%;
+
+    margin: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   SCIENTIFIC CALCULATOR KEYSTROKES
+========================================================= */
+
+.scientific-keystrokes {
+    width: calc(100% - 20px);
+
+    margin: 12px auto 20px;
+    padding: 14px 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(18, 20, 22, 0.38)
+        );
+
+    border:
+        1px solid
+        rgba(214, 168, 79, 0.25);
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.06),
+        inset 0 -1px 0 rgba(214, 168, 79, 0.05);
+}
+
+.scientific-keystrokes-title {
+    margin-bottom: 12px;
+
+    color: #d6a84f;
+
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+
+    text-shadow:
+        0 0 10px rgba(214, 168, 79, 0.12);
+}
+
+.keystroke-display {
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 6px;
+
+    min-height: 16px;
+
+    color: #ffffff;
+
+    font-size: 0.95rem;
+}
+
+
+/* =========================================================
+   SCIENTIFIC CALCULATOR KEYS
+========================================================= */
+
+.scientific-key {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-width: 42px;
+    min-height: 34px;
+
+    padding: 5px 9px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.07),
+            rgba(18, 20, 22, 0.55)
+        );
+
+    border:
+        1px solid
+        rgba(214, 168, 79, 0.24);
+
+    border-bottom:
+        3px solid
+        rgba(214, 168, 79, 0.18);
+
+    border-radius: 5px;
+
+    color: #ffffff;
+
+    font-family:
+        "Courier New",
+        monospace;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+
+    box-shadow:
+        0 2px 0 rgba(0, 0, 0, 0.35);
+
+    white-space: nowrap;
+}
+
+.scientific-key.operator,
+.scientific-key.function {
+    color: #f0c94a;
+}
+
+.scientific-key.function {
+    border-color:
+        rgba(214, 168, 79, 0.45);
+}
+
+.scientific-key.equals {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(214, 168, 79, 0.20),
+            rgba(40, 34, 15, 0.60)
+        );
+
+    border-color:
+        rgba(214, 168, 79, 0.55);
+
+    color: #ffffff;
+}
+
+
+/* =========================================================
+   CALCULATOR SLIDERS
+========================================================= */
+
+.value-slider {
+    display: block;
+
+    width: 100%;
+    max-width: 700px;
+    min-width: 0;
+
+    height: 36px;
+
+    margin: 0;
+
+    cursor: pointer;
+
+    accent-color: #d6a84f;
+}
+
+
+/* =========================================================
+   INPUT GROUP
+========================================================= */
+
+.input-group {
+    width: 100%;
+
+    margin-bottom: 24px;
+}
+
+
+/* =========================================================
+   INPUT LABEL
+========================================================= */
+
+.input-group > label {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    width: 100%;
+
+    margin-bottom: 8px;
+
+    color: #eeeeee;
+
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   INPUT SYMBOL
+========================================================= */
+
+.input-group label strong {
+    margin-left: 6px;
+
+    color: #f0c94a;
+}
+
+
+/* =========================================================
+   LIVE VALUE
+========================================================= */
+
+.live-value {
+    display: inline-flex;
+
+    align-items: center;
+
+    white-space: nowrap;
+
+    color: #d6a84f;
+}
+
+
+/* =========================================================
+   CLICKABLE VALUE
+========================================================= */
+
+.editable-value {
+    min-width: 40px;
+
+    padding: 3px 5px;
+
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    background: transparent;
+
+    color: #d6a84f;
+
+    font: inherit;
+    font-weight: 600;
+
+    text-align: right;
+
+    cursor: pointer;
+}
+
+.editable-value:hover {
+    border-color:
+        rgba(214, 168, 79, 0.45);
+
+    background:
+        rgba(214, 168, 79, 0.08);
+}
+
+
+/* =========================================================
+   EXACT VALUE INPUT
+========================================================= */
+
+.editable-value-input {
+    width: 75px;
+
+    padding: 3px 5px;
+
+    border:
+        1px solid
+        rgba(214, 168, 79, 0.60);
+
+    border-radius: 4px;
+
+    background:
+        rgba(18, 20, 22, 0.70);
+
+    color: #ffffff;
+
+    font: inherit;
+    font-weight: 600;
+
+    text-align: right;
+}
+
+.editable-value-input:focus {
+    outline: none;
+
+    border-color:
+        #f0c94a;
+
+    box-shadow:
+        0 0 8px rgba(214, 168, 79, 0.10);
+}
+
+
+/* =========================================================
+   CALCULATOR RESULT
+========================================================= */
+
+.calculator-result {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-top: 24px;
+    padding: 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(0, 0, 0, 0.25)
+        );
+
+    border:
+        1px solid
+        rgba(214, 168, 79, 0.25);
+
+    border-radius: 10px;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.06),
+        inset 0 -1px 0 rgba(214, 168, 79, 0.05);
+}
+
+.calculator-result span {
+    color: #d6a84f;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.calculator-result strong {
+    color: #f1f1f1;
+
+    font-size: 1.4rem;
+}
+
+
+/* =========================================================
+   FIELD INFORMATION
+========================================================= */
+
+.field-information {
+    margin-top: 24px;
+}
+
+.field-information p {
+    margin: 0 0 14px;
+
+    color: rgba(220, 220, 220, 0.58);
+
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   PRACTICE
+========================================================= */
+
+#practiceButton {
+    width: 100%;
+
+    margin-top: 70px;
+    padding: 12px 16px;
+
+    border:
+        1px solid
+        rgba(214, 168, 79, 0.55);
+
+    border-radius: 7px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(214, 168, 79, 0.14),
+            rgba(40, 34, 15, 0.55)
+        );
+
+    color: #ffffff;
+
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+
+    cursor: pointer;
+}
+
+#practiceButton:hover {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(214, 168, 79, 0.23),
+            rgba(40, 34, 15, 0.65)
+        );
+
+    color: #f0c94a;
+}
+
+
+/* =========================================================
+   PRACTICE BOX
+========================================================= */
+
+#practiceBox {
+    margin-top: 14px;
+    padding: 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(0, 0, 0, 0.25)
+        );
+
+    border:
+        1px solid
+        rgba(214, 168, 79, 0.25);
+
+    border-radius: 10px;
+
+    color: rgba(220, 220, 220, 0.62);
+
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+#practiceBox strong {
+    color: #d6a84f;
+}
+
+.practice-answer {
+    margin-top: 14px;
+}
+
+.practice-answer label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #d6a84f;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+}
+
+.practice-answer input {
+    width: 100%;
+
+    padding: 10px;
+
+    border:
+        1px solid
+        rgba(214, 168, 79, 0.25);
+
+    border-radius: 6px;
+
+    background:
+        rgba(18, 20, 22, 0.65);
+
+    color: #ffffff;
+
+    font-size: 1rem;
+}
+
+.practice-answer input:focus {
+    outline: none;
+
+    border-color:
+        #d6a84f;
+
+    box-shadow:
+        0 0 8px rgba(214, 168, 79, 0.10);
+}
+
+.practice-answer button,
+#newPracticeProblem {
+    width: 100%;
+
+    margin-top: 10px;
+    padding: 10px;
+
+    border:
+        1px solid
+        rgba(214, 168, 79, 0.45);
+
+    border-radius: 6px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.055),
+            rgba(18, 20, 22, 0.42)
+        );
+
+    color: #ffffff;
+
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.practice-answer button:hover,
+#newPracticeProblem:hover {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(214, 168, 79, 0.18),
+            rgba(40, 34, 15, 0.60)
+        );
+
+    color: #f0c94a;
+}
+
+
+/* =========================================================
+   BASIC CALCULATOR
+========================================================= */
+
+.basic-calculator {
+    width: calc(100% - 20px);
+    max-width: 360px;
+
+    margin: 30px auto 0;
+    padding: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(227, 226, 226, 0.10),
+            rgba(18, 20, 22, 0.45)
+        );
+
+    border:
+        1px solid
+        rgba(214, 168, 79, 0.32);
+
+    border-radius: 12px;
+
+    box-shadow:
+        inset 0 1px 0 rgba(255, 255, 255, 0.07),
+        inset 0 -1px 0 rgba(214, 168, 79, 0.06);
+}
+
+.basic-calculator-title {
+    margin-bottom: 12px;
+
+    color: #d6a84f;
+
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.15em;
+
+    text-align: center;
+}
+
+.basic-display {
+    width: 100%;
+    min-height: 64px;
+
+    padding: 12px 16px;
+    margin-bottom: 12px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: flex-end;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(0, 0, 0, 0.50),
+            rgba(18, 20, 22, 0.75)
+        );
+
+    border:
+        1px solid
+        rgba(214, 168, 79, 0.25);
+
+    border-radius: 8px;
+
+    color: #ffffff;
+
+    font-size: 2rem;
+    font-weight: 700;
+
+    overflow: hidden;
+}
+
+.basic-calculator-buttons {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr));
+
+    gap: 8px;
+}
+
+.basic-calculator-buttons button {
+    min-height: 52px;
+
+    border:
+        1px solid
+        rgba(214, 168, 79, 0.22);
+
+    border-radius: 7px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.065),
+            rgba(18, 20, 22, 0.55)
+        );
+
+    color: #ffffff;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    cursor: pointer;
+}
+
+.basic-calculator-buttons button:hover {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(214, 168, 79, 0.18),
+            rgba(40, 34, 15, 0.60)
+        );
+
+    border-color:
+        rgba(214, 168, 79, 0.55);
+
+    color: #f0c94a;
+}
+
+.basic-calculator-buttons button:active {
+    transform: scale(0.97);
+}
+
+.basic-calculator-buttons .calc-clear {
+    grid-column: span 1;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(100, 75, 35, 0.18),
+            rgba(30, 25, 18, 0.60)
+        );
+
+    border-color:
+        rgba(180, 150, 90, 0.38);
+}
+
+.basic-calculator-buttons .calc-clear:hover {
+    background:
+        linear-gradient(
+            145deg,
+            rgba(130, 95, 40, 0.24),
+            rgba(40, 32, 18, 0.68)
+        );
+}
+
+.basic-calculator-buttons .calc-zero {
+    grid-column: span 2;
+}
+
+
+/* =========================================================
+   BASIC CALCULATOR WARNING
+========================================================= */
+
+.basic-calculator-warning {
+    width: min(100%, 360px);
+    max-width: 360px;
+
+    margin: 14px auto 0;
+    padding: 14px 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255, 255, 255, 0.045),
+            rgba(0, 0, 0, 0.28)
+        );
+
+    border:
+        1px solid
+        rgba(214, 168, 79, 0.22);
+
+    border-radius: 10px;
+
+    text-align: left;
+}
+
+.warning-label {
+    margin-bottom: 6px;
+
+    color: #d6a84f;
+
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+}
+
+.basic-calculator-warning p {
+    margin: 0;
+
+    color: rgba(215, 215, 215, 0.55);
+
+    font-size: 0.82rem;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+    .input-group > label {
+        font-size: 0.95rem;
+    }
+
+    .value-slider {
+        height: 40px;
+    }
+
+    .scientific-keystrokes {
+        padding: 12px;
+    }
+
+    .scientific-key {
+        min-width: 38px;
+        min-height: 32px;
+
+        padding: 4px 7px;
+
+        font-size: 0.78rem;
+    }
+}
+
+
+/* =========================================================
+   SMALL PHONE
+========================================================= */
+
+@media (max-width: 500px) {
+
+    .color-wheel-content {
+        width: calc(100% - 16px);
+    }
+
+    .basic-calculator {
+        width: calc(100% - 20px);
+
+        padding: 12px;
+    }
+
+    .basic-calculator-title {
+        font-size: 0.85rem;
+    }
+
+    .basic-display {
+        min-height: 52px;
+
+        padding: 10px 12px;
+
+        font-size:
+            clamp(1.3rem, 7vw, 2rem);
+    }
+
+    .basic-calculator-buttons {
+        gap: 6px;
+    }
+
+    .basic-calculator-buttons button {
+        min-height: 46px;
+
+        font-size:
+            clamp(1rem, 5vw, 1.2rem);
+    }
+
+    .basic-calculator-warning {
+        width: calc(100% - 20px);
+
+        padding: 12px;
+    }
+}
+
+
+/* =========================================================
+   REDUCE MOTION
+========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+}

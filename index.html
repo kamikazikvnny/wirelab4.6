@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>wire-lab — Virtual Electrical Training</title>
+<link rel="stylesheet" href="nav.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div class="navbar">
+
+        <div class="navbar-avatar">
+            <a href="account.html" class="avatar-frame" id="navbar-profile">
+                <img src="../z-images/profile-icons/icon-03.webp" alt="Account">
+            </a>
+        </div>
+
+        <div class="brand">
+            <div class="brand-icon">⚡</div>
+        </div>
+
+        <nav class="site-navigation">
+                <a data-page="home" class="nav-button">HOME</a>
+                <a data-page="study" class="nav-button">STUDY</a>
+                <a data-page="labs" class="nav-button">LABS</a>
+                <a data-page="test" class="nav-button">TEST</a>
+            <div class="menu-container">
+
+                <button
+                    type="button"
+                    class="nav-button menu-button"
+                    id="menu-button"
+                    aria-label="Open menu"
+                    title="Menu">
+                    ☰
+                </button>
+
+                <div class="menu-panel" id="menu-panel">
+                    <a href="debug/debug.html" class="menu-item">DEBUG</a>
+                    <a href="tools/tools.html" class="menu-item">TOOLS</a>
+                    <a href="account/account.html" class="menu-item">ACCOUNT</a>
+                </div>
+            </div>
+        </nav>
+
+        <button
+            type="button"
+            class="theme-toggle"
+            id="theme-toggle"
+            aria-label="Switch to light theme"
+            title="Switch theme"> 💡 </button>
+    </div> <!-- navbar -->
+</header>
+
+<main class="home-content page-width">
+    <!-- =================================================
+         HERO
+    ================================================== -->
+    <section class="home-hero">
+        <div class="home-hero-content">
+            <span class="hero-label"> VIRTUAL ELECTRICAL TRAINING </span>
+            <h2> ENTER THE LAB. </h2>
+            <p> Learn electrical theory, build circuits,
+                test your knowledge, and troubleshoot
+                real-world problems. </p>
+            <a href="study/study.html" class="hero-button" > START LEARNING </a>
+        </div>
+    </section>
+
+    <!-- =================================================
+         CORE LOOP
+    ================================================== -->
+    <section class="home-loop">
+        <div class="section-heading">
+            <span class="section-label">
+                THE WIRELAB SYSTEM
+            </span>
+            <h2> LEARN IT. BUILD IT. TEST IT. FIX IT. </h2>
+            <p> Follow the complete electrical learning
+                cycle from theory to troubleshooting. </p>
+        </div>
+        
+        <div class="home-action-grid"> <!--- Home Action Grid-->
+
+            <!-- STUDY -->
+            <a href="study/study.html" class="home-action-card">
+                <span class="action-number"> 01 </span>
+                <span class="action-label"> LEARN IT </span>
+                <h3> STUDY </h3>
+                <p>Build your electrical knowledge through
+                    structured lessons and key concepts. </p>
+                <span class="action-link"> ENTER STUDY → </span>
+            </a>
+
+            <!-- LABS -->
+            <a href="labs/labs.html" class="home-action-card" >
+                <span class="action-number"> 02 </span>
+                <span class="action-label"> BUILD IT </span>
+                <h3> LABS </h3>
+                <p> Work with virtual electrical circuits
+                    and practice hands-on concepts. </p>
+                <span class="action-link"> ENTER LABS → </span>
+            </a>
+
+            <!-- TEST -->
+            <a href="test/test.html" class="home-action-card">
+                <span class="action-number">03</span>
+                <span class="action-label">TEST IT</span>
+                <h3>TEST</h3>
+                <p>
+                    Challenge your electrical knowledge
+                    with questions and assessments. </p>
+                <span class="action-link"> TAKE A TEST → </span>
+            </a>
+
+            <!-- DEBUG -->
+            <a href="debug/debug.html" class="home-action-card" >
+                <span class="action-number"> 04 </span>
+                <span class="action-label"> FIX IT </span>
+                <h3> DEBUG </h3>
+                <p>
+                    Find electrical faults and develop
+                    real-world troubleshooting skills. </p>
+                <span class="action-link"> START DEBUGGING → </span>
+            </a>
+        </div> <!-- Home Action Grid -->
+    </section>
+
+    <!-- =================================================
+         CONTINUE LEARNING
+    ================================================== -->
+    <section class="home-progress">
+        <div class="section-heading">
+            <span class="section-label">
+                YOUR PROGRESS
+            </span>
+            <h2> CONTINUE LEARNING </h2>
+        </div>
+        <div class="progress-card">
+            <div class="progress-card-main">
+                <span class="progress-label">
+                    STUDY PROGRESS
+                </span>
+                <h3> Electrical Theory </h3>
+                <p>
+                    Continue working through your WireLab
+                    electrical training units. </p>
+            </div>
+            <div class="progress-stat">
+                <strong id="homeProgressCount">
+                    0
+                </strong>
+                <span> OF 36 UNITS </span>
+            </div>
+            <a href="study/study.html" class="progress-button">
+                CONTINUE →
+            </a>
+        </div>
+    </section>
+
+    <!-- =================================================
+         LAB COMMAND CENTER
+    ================================================== -->
+    <section class="home-command-center">
+        <div class="section-heading">
+            <span class="section-label">
+                LAB COMMAND CENTER
+            </span>
+            <h2> YOUR ELECTRICAL WORKSPACE </h2>
+            <p>
+                Everything you need to study, practice,
+                test, and troubleshoot in one place. </p>
+        </div>
+        <div class="command-grid">
+
+            <!-- TODAY'S LAB -->
+            <a href="labs/labs.html" class="command-card" >
+                <span class="command-label"> TODAY'S LAB </span>
+                <h3> PRACTICE </h3>
+                <p>
+                    Open a virtual lab and put your
+                    electrical knowledge to work.
+                </p>
+                <span class="command-link"> OPEN LAB → </span>
+            </a>
+
+            <!-- TOOLS -->
+            <a href="tools/tools.html" class="command-card" >
+                <span class="command-label"> ELECTRICAL TOOLS </span>
+                <h3> CALCULATE </h3>
+                <p>
+                    Use electrical calculators and
+                    reference tools while you learn.
+                </p>
+                <span class="command-link"> OPEN TOOLS → </span>
+            </a>
+
+            <!-- TEST -->
+            <a href="test/test.html" class="command-card">
+                <span class="command-label"> KNOWLEDGE CHECK </span>
+                <h3> CHALLENGE </h3>
+                <p>
+                    Test what you know and track your
+                    electrical training progress.
+                </p>
+                <span class="command-link"> TAKE TEST → </span>
+            </a>
+        </div>
+    </section>
+
+    <!-- =================================================
+         LAB BENCH
+    ================================================== -->
+    <section class="home-lab-bench">
+        <div class="lab-bench-content">
+            <span class="section-label"> WIRELAB </span>
+            <h2> THE LAB IS OPEN. </h2>
+            <p> Study the theory. Build the circuit.
+                Test your knowledge. Find the fault.
+            </p>
+            <a href="labs/labs.html" class="hero-button" >
+                ENTER THE LAB
+            </a>
+        </div>
+    </section>
+</main>
+
+<script src="nav.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
